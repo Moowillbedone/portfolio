@@ -73,7 +73,7 @@ a{color:inherit}
   display:inline-flex;align-items:center;gap:6px;flex-shrink:0;
   font-size:12.5px;font-weight:700;color:#fff;background:var(--navy);
   padding:8px 14px;border-radius:9px;border:none;cursor:pointer;font-family:inherit;
-  letter-spacing:-0.01em;transition:all .15s
+  letter-spacing:-0.01em;transition:all .15s;text-decoration:none
 }
 .nav-pdf:hover{background:var(--blue)}
 
@@ -383,7 +383,8 @@ a{color:inherit}
   .section-title{font-size:23px;page-break-after:avoid}
   .eyebrow{page-break-after:avoid}
   .card,.hiw-card,.philo,.sblock,.ig,.action,.ci,.impact-cell,.flow,.shot{page-break-inside:avoid;break-inside:avoid}
-  .case{page-break-inside:avoid;break-inside:avoid;padding:18px 20px;margin-bottom:8px}
+  .case{break-inside:auto;padding:18px 20px;margin-bottom:8px}
+  .cs-label{page-break-after:avoid}
   .case-head{page-break-after:avoid}
   .cs{page-break-inside:avoid}
   .lesson{page-break-inside:avoid;page-break-before:avoid}
@@ -412,7 +413,7 @@ a{color:inherit}
       <a href="#philosophy">철학</a>
       <a href="#contact">연락처</a>
     </div>
-    <button class="nav-pdf" onclick="window.print()">↓ PDF</button>
+    <a class="nav-pdf" href="이건무_포트폴리오.pdf" download="이건무_포트폴리오.pdf">↓ PDF</a>
   </div>
 </nav>
 
@@ -441,7 +442,7 @@ a{color:inherit}
     <div class="glance-cell"><div class="glance-num">월 1<span class="u">억+</span></div><div class="glance-lbl">광고 BM 매출</div></div>
     <div class="glance-cell"><div class="glance-num">월 3<span class="u">억</span></div><div class="glance-lbl">커머스 매출 (언니딜)</div></div>
     <div class="glance-cell"><div class="glance-num">월 4천<span class="u">만</span></div><div class="glance-lbl">도네이션 BM 신설</div></div>
-    <div class="glance-cell"><div class="glance-num count" data-to="15" data-prefix="+" data-suffix="%">0</div><div class="glance-lbl">CVR 개선 (포토리뷰)</div></div>
+    <div class="glance-cell"><div class="glance-num">#1</div><div class="glance-lbl">Play Store 뷰티 1위</div></div>
     <div class="glance-cell"><div class="glance-num" style="font-size:20px;padding-top:5px">🏆 최우수상</div><div class="glance-lbl">구글플레이 2021</div></div>
   </div>
 </section>
@@ -469,9 +470,9 @@ a{color:inherit}
         <ul class="about-bullets">
           <li><b>End-to-End 오너십</b> — 화면부터 정산 Admin까지 단독 설계 (월 4천만 도네이션 BM)</li>
           <li><b>500만 MAU</b> 트래픽의 광고 효율 최적화 & 수익화 (월 1억+)</li>
-          <li><b>데이터 기반 의사결정</b> — 포토 리뷰 가중치 한 줄로 CVR +15%</li>
+          <li><b>데이터 기반 의사결정</b> — 언파캐시 순환 BM 설계로 보상을 매출로 전환</li>
           <li><b>다부처 협업 리딩</b> — 개발·디자인·사업·운영 정렬해 출시까지</li>
-          <li><b>B2B2C 확장</b> — 트로스트 EAP · 팀워크 SaaS 등 기업 채널 신설</li>
+          <li><b>B2B2C 확장</b> — 트로스트 EAP · 팀워크 B2G 미션광고 등 기업·공공 채널 신설</li>
           <li><b>AI 활용</b> — Claude·Gemini·Cursor로 PRD·프로토타입 시간 단위 단축</li>
         </ul>
       </div>
@@ -536,8 +537,8 @@ a{color:inherit}
         <div class="tl-right">
           <div class="co"><img class="co-logo" src="assets/logos/grip.png" alt="그립컴퍼니" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="co-logo-fallback">G</span><div><div class="company">그립컴퍼니 (Grip)</div><div class="role">Product Owner · 라이브 커머스</div></div></div>
           <ul class="tl-bullets">
+            <li>도네이션(젬) BM 신규 출시 — 광고→젬→후원 순환경제, DAU 3만 기준 <strong>월 4천만원</strong></li>
             <li>셀러 셀프서빙 광고 센터 기획 — CRM·카카오 알림톡/브랜드메시지, 톡커넥트·부스트팩·CRM톡 (<strong>BRD 단독 작성</strong>)</li>
-            <li>도네이션(젬) BM 신규 출시 — 광고→젬→후원 순환경제, DAU 3만 기준 <strong>월 순수익 약 3천만원</strong></li>
             <li>비즈니스 센터 정산·결제·환불 Admin <strong>A to Z 설계</strong></li>
           </ul>
         </div>
@@ -613,7 +614,7 @@ a{color:inherit}
       <div class="ig reveal"><div class="ig-tag">DONATION BM</div><div class="ig-num">월 4천<span class="u">만</span></div><div class="ig-sub">그립 라이브 도네이션 (DAU 3만)</div></div>
       <div class="ig reveal"><div class="ig-tag">MISSION AD</div><div class="ig-num">월 1<span class="u">억</span></div><div class="ig-sub">팀워크 챌린지형 광고</div></div>
 
-      <div class="ig reveal"><div class="ig-tag">CVR LIFT</div><div class="ig-num count" data-to="15" data-prefix="+" data-suffix="%">0</div><div class="ig-sub">언니의파우치 포토 리뷰 가중치</div></div>
+      <div class="ig reveal"><div class="ig-tag">RANKED</div><div class="ig-num">#1</div><div class="ig-sub">Play Store 뷰티 카테고리 1위 (24.9)</div></div>
       <div class="ig reveal"><div class="ig-tag">FOLLOWER</div><div class="ig-num count" data-to="200" data-prefix="+" data-suffix="%">0</div><div class="ig-sub">그립 도네이션 후 크리에이터 팔로우</div></div>
       <div class="ig reveal"><div class="ig-tag">PURCHASE</div><div class="ig-num count" data-to="100" data-prefix="+" data-suffix="%">0</div><div class="ig-sub">도네이션 유저의 상품 구매 증가</div></div>
       <div class="ig reveal"><div class="ig-tag">SUBSCRIPTION</div><div class="ig-num count" data-to="200" data-prefix="+" data-suffix="%">0</div><div class="ig-sub">다노 베이직 케어 가입률 (vs 토탈케어)</div></div>
@@ -630,13 +631,13 @@ a{color:inherit}
     <p class="section-lead reveal">8년+ 동안 직접 설계한 9개의 대표 케이스입니다. 각 케이스는 <em>배경 → 접근 → 구조 → 화면 → 결과 → 학습</em> 구조로 정리했습니다.</p>
 
     <div class="case-index reveal">
-      <a class="ci" href="#case-1"><div class="ci-num">CASE 01</div><div class="ci-tag">AD PLATFORM · SELF-SERVE</div><div class="ci-h">셀러 셀프서빙 광고 센터 — CRM·카카오 알림톡</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/grip.png" alt="">그립 · 2025 — NOW</div><div class="ci-impact">톡커넥트·부스트팩·CRM톡 · 카카오 메시징 광고</div></a>
-      <a class="ci" href="#case-2"><div class="ci-num">CASE 02</div><div class="ci-tag">NEW BM · A TO Z</div><div class="ci-h">크리에이터 팬덤을 매출로 — 도네이션 BM</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/grip.png" alt="">그립 · 2025</div><div class="ci-impact">월 순수익 약 3천만 · 광고→젬→후원 순환경제</div></a>
+      <a class="ci" href="#case-1"><div class="ci-num">CASE 01</div><div class="ci-tag">NEW BM · A TO Z</div><div class="ci-h">크리에이터 팬덤을 매출로 — 도네이션 BM</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/grip.png" alt="">그립 · 2025</div><div class="ci-impact">월 4천만 · 광고→젬→후원 순환경제</div></a>
+      <a class="ci" href="#case-2"><div class="ci-num">CASE 02</div><div class="ci-tag">AD PLATFORM · SELF-SERVE</div><div class="ci-h">셀러 셀프서빙 광고 센터 — CRM·카카오 알림톡</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/grip.png" alt="">그립 · 2025 — NOW</div><div class="ci-impact">톡커넥트·부스트팩·CRM톡 · 카카오 메시징 광고</div></a>
       <a class="ci" href="#case-3"><div class="ci-num">CASE 03</div><div class="ci-tag">DATA · SCALE</div><div class="ci-h">500만 MAU 통합 커뮤니티 — 광고 BM 월 1억</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">캐시워크 · 2021—25</div><div class="ci-impact">월 1억+ · MAU 500M · SaaS 확장</div></a>
-      <a class="ci" href="#case-4"><div class="ci-num">CASE 04</div><div class="ci-tag">ALGORITHM · CVR</div><div class="ci-h">뷰티 쇼핑 내재화 — 언니딜 월 3억</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">언니의파우치 · 2021—25</div><div class="ci-impact">월 3억 · CVR+15% · Play 1위</div></a>
-      <a class="ci" href="#case-5"><div class="ci-num">CASE 05</div><div class="ci-tag">B2B2C · PIPELINE</div><div class="ci-h">전문가 매칭 + 기업 EAP — B2C·B2B 두 축</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">트로스트 · 2021—25</div><div class="ci-impact">MAU 20M · B2B 매출 신규 라인</div></a>
-      <a class="ci" href="#case-6"><div class="ci-num">CASE 06</div><div class="ci-tag">B2B SaaS · PUBLIC</div><div class="ci-h">미션형 광고 플랫폼 — 걷기 챌린지 월 1억</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">팀워크 · 2021—25</div><div class="ci-impact">월 1억 · MAU 100M · 공공 캠페인</div></a>
-      <a class="ci" href="#case-7"><div class="ci-num">CASE 07</div><div class="ci-tag">AI · UX · AWARD</div><div class="ci-h">AI 모션 인식 운동 — 구글플레이 최우수상</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/ipixel.png" alt="">하우핏 · 2020—21</div><div class="ci-impact">구글플레이 2021 최우수상 · 라이브 BM</div></a>
+      <a class="ci" href="#case-4"><div class="ci-num">CASE 04</div><div class="ci-tag">LOOP ECONOMY · COMMERCE</div><div class="ci-h">뷰티 쇼핑 내재화 — 언니딜 월 3억</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">언니의파우치 · 2021—25</div><div class="ci-impact">월 3억 · 언파캐시 순환 · Play 1위</div></a>
+      <a class="ci" href="#case-5"><div class="ci-num">CASE 05</div><div class="ci-tag">MISSION AD · B2G</div><div class="ci-h">미션형 광고 플랫폼 — 걷기 챌린지 월 1억</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">팀워크 · 2021—25</div><div class="ci-impact">월 1억 · MAU 100M · 공공 캠페인</div></a>
+      <a class="ci" href="#case-6"><div class="ci-num">CASE 06</div><div class="ci-tag">MENTAL CARE · B2B2C</div><div class="ci-h">멘탈 케어 종합 — 힐링 콘텐츠·전문가 매칭·기업 EAP</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">트로스트 · 2021—25</div><div class="ci-impact">MAU 20M · 힐링 콘텐츠 + B2B EAP</div></a>
+      <a class="ci" href="#case-7"><div class="ci-num">CASE 07</div><div class="ci-tag">AI · GAMIFY · AWARD</div><div class="ci-h">AI 모션 인식으로 운동을 게임처럼 — 최우수상</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/ipixel.png" alt="">하우핏 · 2020—21</div><div class="ci-impact">구글플레이 2021 최우수상 · 라이브 BM</div></a>
       <a class="ci" href="#case-8"><div class="ci-num">CASE 08</div><div class="ci-tag">SUBSCRIPTION · OPS</div><div class="ci-h">베이직 케어 출시 — 가입률 +200%</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/dano.png" alt="">다노 · 2019—20</div><div class="ci-impact">가입률+200% · 코로나 PT 채널 신설</div></a>
       <a class="ci" href="#case-9"><div class="ci-num">CASE 09</div><div class="ci-tag">LAUNCH · CRM</div><div class="ci-h">모두의 트레이닝 — 신규 피트니스 런칭</div><div class="ci-meta"><img class="logo-chip-img" src="assets/logos/classu.png" alt="">엔핏 · 2018—19</div><div class="ci-impact">온·오프라인 런칭 · 코치 매칭 시스템</div></a>
     </div>
@@ -647,7 +648,51 @@ a{color:inherit}
       <article class="case reveal" id="case-1">
         <header class="case-head">
           <div>
-            <div class="case-num">CASE 01 / AD PLATFORM · SELF-SERVE</div>
+            <div class="case-num">CASE 01 / NEW BM · A TO Z</div>
+            <h3 class="case-title">크리에이터 팬덤을 매출로 — 도네이션 BM</h3>
+            <div class="case-meta"><img class="logo-chip-img" src="assets/logos/grip.png" alt="">그립컴퍼니<span class="pipe">·</span>2025<span class="pipe">·</span>Product Owner — End-to-End</div>
+          </div>
+          <div class="case-tags"><span class="case-tag">GEM ECONOMY</span><span class="case-tag">OWNERSHIP</span><span class="case-tag gold">팬덤 경제</span><span class="case-tag contrib">기여도 100%</span></div>
+        </header>
+        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">라이브 커머스 GMV는 결국 <strong>"이 크리에이터가 좋아서 산다"</strong>는 팬덤이 기반입니다. 그러나 시청 → 구매 외에 <strong>크리에이터를 직접 지원할 수단</strong>이 없었고, 단발성 리워드로는 팬심이 매출·재방문으로 이어지지 못했습니다. (DAU 3만 라이브 트래픽 기반)</p></div>
+        <div class="cs"><div class="cs-label">접근</div>
+          <div class="actions">
+            <div class="action"><span class="n">A1</span><span class="t">광고→젬→후원 순환 경제 설계</span><span class="d">오퍼월(인앱광고)로 무료 [젬] 적립 또는 인앱결제 충전 → 라이브 상시 [후원 영역](프로그래스바 Lv1~10)에 후원. 기존 부스터를 후원 버튼으로 전환</span></div>
+            <div class="action"><span class="n">A2</span><span class="t">비즈니스센터 정산 Admin (A to Z)</span><span class="d">크리에이터별 후원 집계 · 환전·정산 · 세금 · 환불까지 운영 가능한 백오피스를 단독 설계</span></div>
+            <div class="action"><span class="n">A3</span><span class="t">팬덤 강화 루프</span><span class="d">후원 → 크리에이터 노출·랭킹·홈 광고, 후원자에겐 닉네임 강화·뱃지·등급 기여 → 재방문·재후원</span></div>
+          </div>
+        </div>
+        <div class="cs"><div class="cs-label">구조 · Gem Loop</div>
+          <div class="flow">
+            <div class="flow-step start"><div class="fh">오퍼월·결제</div><div class="fd">젬 적립</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step accent"><div class="fh">라이브 후원</div><div class="fd">프로그래스바 Lv1~10</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="fh">크리에이터</div><div class="fd">정산·노출·랭킹</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="fh">팬덤·리텐션↑</div><div class="fd">재방문·재후원</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step gold"><div class="fh">다중 수익</div><div class="fd">광고+젬결제+환전</div></div>
+          </div>
+        </div>
+        <div class="cs"><div class="cs-label">화면 · Screens</div>
+          <div class="shots cols-1">
+            <div class="shot shot-wide shot-contain"><div class="shot-frame"><img src="assets/screens/grip-donation-flow.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🎁</span><span class="t">라이브 후원 전체 플로우</span><span class="f">grip-donation-flow.png</span></div></div><div class="shot-cap"><span class="k">01</span>라이브 후원 전체 플로우 — 오퍼월·결제로 젬 적립 → 후원 박스 Lv1~10 → 크리에이터 노출·랭킹·정산</div></div>
+            <div class="shot shot-wide shot-contain"><div class="shot-frame"><img src="assets/screens/grip-donation-admin.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📊</span><span class="t">운영 백오피스 3종</span><span class="f">grip-donation-admin.png</span></div></div><div class="shot-cap"><span class="k">02</span>운영 백오피스 3종 — 젬·후원자 관리 Admin · 비즈니스센터 정산 · 분석 대시보드(AI 자체 제작) — A to Z 단독 설계</div></div>
+          </div>
+        </div>
+        <div class="cs"><div class="cs-label">결과</div>
+          <div class="impact-row">
+            <div class="impact-cell"><div class="num sm">핵심 활성층</div><div class="lbl">후원 유저 = 라이브 구매·재방문 최상위 그룹</div></div>
+            <div class="impact-cell"><div class="num sm">관계 기반</div><div class="lbl">팔로우(관계)가 후원의 선행조건</div></div>
+            <div class="impact-cell"><div class="num">월 4천만</div><div class="lbl">도네이션 BM · 광고+젬결제+환전</div></div>
+            <div class="impact-cell"><div class="num sm">A → Z</div><div class="lbl">정산·환전·환불 Admin 단독 설계</div></div>
+          </div>
+        </div>
+        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>후원은 '매출'이 아니라 '활성'을 산다.</strong> 후원 유저 1명의 활성도가 일반 유저 다수와 맞먹었고, <strong>팔로우(관계)가 후원의 선행조건</strong>이었습니다. 광고·결제·환전 다중 수익을 끊김 없이 굴린 시작점은 정산 Admin이었습니다.</p></div>
+      </article>
+
+      <!-- CASE 02 -->
+      <article class="case reveal" id="case-2">
+        <header class="case-head">
+          <div>
+            <div class="case-num">CASE 02 / AD PLATFORM · SELF-SERVE</div>
             <h3 class="case-title">라이브 커머스 셀러 광고 센터 — CRM·카카오 알림톡 셀프서빙 플랫폼</h3>
             <div class="case-meta"><img class="logo-chip-img" src="assets/logos/grip.png" alt="">그립컴퍼니<span class="pipe">·</span>2025.03 — 진행중<span class="pipe">·</span>Product Owner — Lead · BRD 작성</div>
           </div>
@@ -687,51 +732,6 @@ a{color:inherit}
         <div class="lesson"><div class="cs-label">학습 · Lesson</div><p class="cs-text">광고는 '노출'이 아니라 <strong>셀러가 스스로 굴리는 시스템</strong>으로 풀어야 확장됩니다. 라이브 커머스에선 <strong>카카오 알림톡·브랜드메시지 같은 메시징 광고</strong>가 핵심 채널이었고, 수동·대행을 <strong>셀프서빙·자동화</strong>로 바꾼 게 단가와 효율의 레버였습니다.</p></div>
       </article>
 
-      <!-- CASE 02 -->
-      <article class="case reveal" id="case-2">
-        <header class="case-head">
-          <div>
-            <div class="case-num">CASE 02 / NEW BM · A TO Z</div>
-            <h3 class="case-title">크리에이터 팬덤을 매출로 — 도네이션 BM</h3>
-            <div class="case-meta"><img class="logo-chip-img" src="assets/logos/grip.png" alt="">그립컴퍼니<span class="pipe">·</span>2025<span class="pipe">·</span>Product Owner — End-to-End</div>
-          </div>
-          <div class="case-tags"><span class="case-tag">GEM ECONOMY</span><span class="case-tag">OWNERSHIP</span><span class="case-tag gold">팬덤 경제</span><span class="case-tag contrib">기여도 100%</span></div>
-        </header>
-        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">라이브 커머스 GMV는 결국 <strong>"이 크리에이터가 좋아서 산다"</strong>는 팬덤이 기반입니다. 그러나 시청 → 구매 외에 <strong>크리에이터를 직접 지원할 수단</strong>이 없었고, 만보기식 단발 리워드로는 팬심이 매출·재방문으로 이어지지 못했습니다. (DAU 3만 라이브 트래픽 기반)</p></div>
-        <div class="cs"><div class="cs-label">접근</div>
-          <div class="actions">
-            <div class="action"><span class="n">A1</span><span class="t">광고→젬→후원 순환 경제 설계</span><span class="d">오퍼월(인앱광고)로 무료 [젬] 적립 또는 인앱결제 충전 → 라이브 상시 [후원 영역](프로그래스바 Lv1~10)에 후원. 기존 부스터를 후원 버튼으로 전환</span></div>
-            <div class="action"><span class="n">A2</span><span class="t">비즈니스센터 정산 Admin (A to Z)</span><span class="d">크리에이터별 후원 집계 · 환전·정산 · 세금 · 환불까지 운영 가능한 백오피스를 단독 설계</span></div>
-            <div class="action"><span class="n">A3</span><span class="t">팬덤 강화 루프</span><span class="d">후원 → 크리에이터 노출·랭킹·홈 광고, 후원자에겐 닉네임 강화·뱃지·등급 기여 → 재방문·재후원</span></div>
-          </div>
-        </div>
-        <div class="cs"><div class="cs-label">구조 · Gem Loop</div>
-          <div class="flow">
-            <div class="flow-step start"><div class="fh">오퍼월·결제</div><div class="fd">젬 적립</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step accent"><div class="fh">라이브 후원</div><div class="fd">프로그래스바 Lv1~10</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="fh">크리에이터</div><div class="fd">정산·노출·랭킹</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="fh">팬덤·리텐션↑</div><div class="fd">재방문·재후원</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step gold"><div class="fh">다중 수익</div><div class="fd">광고+젬결제+환전</div></div>
-          </div>
-        </div>
-        <div class="cs"><div class="cs-label">화면 · Screens</div>
-          <div class="shots cols-3">
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/grip-donation-1.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">라이브 후원 영역(프로그래스바)</span><span class="f">grip-donation-1.png</span></div></div><div class="shot-cap"><span class="k">01</span>라이브 후원 영역(프로그래스바)</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/grip-donation-2.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">젬 후원 / 충전 선택</span><span class="f">grip-donation-2.png</span></div></div><div class="shot-cap"><span class="k">02</span>젬 후원 / 충전 선택</div></div>
-            <div class="shot shot-wide"><div class="shot-frame"><img src="assets/screens/dashboard.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📊</span><span class="t">후원·광고 분석 대시보드 (AI 자체 제작)</span><span class="f">dashboard.png</span></div></div><div class="shot-cap"><span class="k">03</span>후원·광고 분석 대시보드 — Claude로 A to Z 자체 제작 (데이터 마스킹)</div></div>
-          </div>
-        </div>
-        <div class="cs"><div class="cs-label">결과</div>
-          <div class="impact-row">
-            <div class="impact-cell"><div class="num sm">핵심 활성층</div><div class="lbl">후원 유저 = 라이브 구매·재방문 최상위 그룹</div></div>
-            <div class="impact-cell"><div class="num sm">관계 기반</div><div class="lbl">팔로우(관계)가 후원의 선행조건</div></div>
-            <div class="impact-cell"><div class="num">월 ~3천만</div><div class="lbl">도네이션 BM 월 순수익(실수령) · 광고+젬결제+환전</div></div>
-            <div class="impact-cell"><div class="num sm">A → Z</div><div class="lbl">정산·환전·환불 Admin 단독 설계</div></div>
-          </div>
-        </div>
-        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>후원은 '매출'이 아니라 '활성'을 산다.</strong> 후원 유저 1명의 활성도가 일반 유저 다수와 맞먹었고, <strong>팔로우(관계)가 후원의 선행조건</strong>이었습니다. 광고·결제·환전 다중 수익을 끊김 없이 굴린 시작점은 정산 Admin이었습니다.</p></div>
-      </article>
-
       <!-- CASE 03 -->
       <article class="case reveal" id="case-3">
         <header class="case-head">
@@ -747,8 +747,7 @@ a{color:inherit}
           <div class="actions">
             <div class="action"><span class="n">A1</span><span class="t">통합 커뮤니티 구축</span><span class="d">걷기 외 "이야기할 거리"를 묶어 체류 시간 확보, SEO 자연 유입 흡수</span></div>
             <div class="action"><span class="n">A2</span><span class="t">광고 수익화 다각화</span><span class="d">SSP · DSP · Offerwall · CRM 광고를 4가지 광고 모델로 디벨롭</span></div>
-            <div class="action"><span class="n">A3</span><span class="t">자체 광고 Admin</span><span class="d">지면·소재·타겟·효율을 한 화면에서 보는 광고지표 모니터링 Admin</span></div>
-            <div class="action"><span class="n">A4</span><span class="t">SaaS형 BM 확장</span><span class="d">구축한 광고 인프라를 외부 파트너에게 SaaS로 제공하는 신규 수익 라인</span></div>
+            <div class="action"><span class="n">A3</span><span class="t">자체 광고 Admin → SaaS화</span><span class="d">지면·소재·타겟·효율을 한 화면에서 보는 광고지표 모니터링 Admin을 자체 구축 → 이 인프라를 외부 파트너에 SaaS로 제공하는 신규 수익 라인으로 확장</span></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">구조 · Traffic → Ad BM → SaaS</div>
@@ -761,10 +760,10 @@ a{color:inherit}
           </div>
         </div>
         <div class="cs"><div class="cs-label">화면 · Screens</div>
-          <div class="shots cols-3">
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/cashwalk-1.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">통합 커뮤니티 홈</span><span class="f">cashwalk-1.png</span></div></div><div class="shot-cap"><span class="k">01</span>통합 커뮤니티 홈</div></div>
-            <div class="shot shot-wide"><div class="shot-frame"><img src="assets/screens/cashwalk-2.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🖥</span><span class="t">광고 Admin 효율 대시보드</span><span class="f">cashwalk-2.png</span></div></div><div class="shot-cap"><span class="k">02</span>광고 Admin 효율 대시보드</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/cashwalk-3.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">Offerwall / 리워드 광고</span><span class="f">cashwalk-3.png</span></div></div><div class="shot-cap"><span class="k">03</span>Offerwall / 리워드 광고</div></div>
+          <div class="shots cols-1">
+            <div class="shot shot-wide shot-contain"><div class="shot-frame"><img src="assets/screens/cashwalk-community.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">💬</span><span class="t">자회사 서비스별 통합 커뮤니티</span><span class="f">cashwalk-community.png</span></div></div><div class="shot-cap"><span class="k">01</span>자회사 서비스별 통합 커뮤니티 — 서비스 수만큼 커뮤니티 생성·연동(캐시워크·팬마음·팬플러스 등)으로 트래픽 흡수. 팬덤 커뮤니티는 활성도 최상</div></div>
+            <div class="shot shot-wide shot-contain"><div class="shot-frame"><img src="assets/screens/cashwalk-ads.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📐</span><span class="t">광고 수익화 지면 설계</span><span class="f">cashwalk-ads.png</span></div></div><div class="shot-cap"><span class="k">02</span>광고 수익화 지면 설계 — PC·모바일 전 지면에 SSP·DSP·CRM·자체광고 배치(규격·위치·우선순위) 로직화</div></div>
+            <div class="shot shot-wide shot-contain"><div class="shot-frame"><img src="assets/screens/cashwalk-admin.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📊</span><span class="t">광고 운영 어드민 (자체 구축)</span><span class="f">cashwalk-admin.png</span></div></div><div class="shot-cap"><span class="k">03</span>광고 운영 어드민 (전체 자체 설계) — SSP별 Request·Impression·Revenue·CTR·eCPM 집계 + 1PV당 수익 분석 (실데이터 마스킹)</div></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">결과</div>
@@ -782,63 +781,105 @@ a{color:inherit}
       <article class="case reveal" id="case-4">
         <header class="case-head">
           <div>
-            <div class="case-num">CASE 04 / ALGORITHM · CVR</div>
+            <div class="case-num">CASE 04 / LOOP ECONOMY · COMMERCE</div>
             <h3 class="case-title">뷰티 쇼핑 내재화 — 언니딜로 월 3억 매출</h3>
             <div class="case-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">넛지헬스케어 · 언니의파우치<span class="pipe">·</span>2021 — 2025<span class="pipe">·</span>Product Owner</div>
           </div>
-          <div class="case-tags"><span class="case-tag">CVR</span><span class="case-tag">COMMERCE</span><span class="case-tag gold">#1 RANKED</span><span class="case-tag contrib">기여도 100%</span></div>
+          <div class="case-tags"><span class="case-tag">언파캐시 순환경제</span><span class="case-tag">COMMERCE</span><span class="case-tag gold">월 3억</span><span class="case-tag contrib">기여도 100%</span></div>
         </header>
-        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">언니의파우치는 뷰티 <strong>커뮤니티·리뷰</strong>에 강했지만, 구매는 외부로 이탈하고 있었습니다. 리뷰 양은 많아도 <strong>신뢰도 있는 포토 리뷰가 부족</strong>해 구매 전환에 한계가 있었습니다.</p></div>
+        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">언니의파우치는 뷰티 <strong>커뮤니티·리뷰</strong> 트래픽은 컸지만, 그 활동을 매출로 잇는 고리가 없었습니다. 리워드로 활성도만 끌어올리면 <strong>그 비용이 그대로 새어나가는 것</strong>이 문제였고, 핵심은 <strong>"보상을 비용이 아니라 매출로 되돌아오는 순환"</strong>으로 설계하는 것이었습니다.</p></div>
         <div class="cs"><div class="cs-label">접근</div>
           <div class="actions">
-            <div class="action"><span class="n">A1</span><span class="t">[언니딜] 출시</span><span class="d">뷰티 쇼핑을 앱 내부에 내재화한 커머스 채널 신설 — 리뷰가 구매로 자연 연결</span></div>
-            <div class="action"><span class="n">A2</span><span class="t">[언파캐시] 리워드 광고</span><span class="d">혜택·리워드 광고 서비스로 간접 광고 매출 증가 + 잔존율 견인</span></div>
-            <div class="action"><span class="n">A3</span><span class="t">포토 리뷰 가중치 로직</span><span class="d">리뷰 정책 + 리스팅 가중치 조정으로 양질의 포토 리뷰 확보 → CVR +15%</span></div>
+            <div class="action"><span class="n">A1</span><span class="t">활동 동기부여 설계</span><span class="d">양질의 댓글·리뷰 작성 + 오퍼월 리워드 미션으로 보상(언파캐시) 적립 — 유저가 언니의파우치를 자주·오래 쓸 확실한 동기. 활성 유저·재방문 견인</span></div>
+            <div class="action"><span class="n">A2</span><span class="t">언파캐시 순환 BM (핵심)</span><span class="d">적립한 언파캐시(리뷰·오퍼월로 유입)를 임계치 이상 모으면 [언니딜] 쿠폰으로 전환(환율 1캐시=N원). 자금이 외부로 새지 않고 <strong>앱 내부에서만 도는</strong> 폐쇄형 경제 설계</span></div>
+            <div class="action"><span class="n">A3</span><span class="t">반자동 검수 + 다중 수익화</span><span class="d">댓글 품질은 <strong>반자동 검수</strong>로 관리. [언니딜] 유료 입점 광고상품 <strong>매칭 수수료</strong> + <strong>오퍼월 광고</strong>로 다중 수익화 — 보상 재원이 매출로 환원</span></div>
           </div>
         </div>
-        <div class="cs"><div class="cs-label">구조 · Review → Commerce</div>
+        <div class="cs"><div class="cs-label">구조 · 언파캐시 선순환 플라이휠</div>
           <div class="flow">
-            <div class="flow-step start"><div class="fh">뷰티 리뷰</div><div class="fd">UGC + 커뮤니티</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step accent"><div class="fh">포토 리뷰 가중치</div><div class="fd">정책 + 리스팅 로직</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="fh">신뢰 리뷰 ↑</div><div class="fd">양질 포토 리뷰</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="fh">[언니딜]</div><div class="fd">앱 내 커머스</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step gold"><div class="fh">월 3억 · #1</div><div class="fd">CVR+15% / 1위</div></div>
+            <div class="flow-step start"><div class="fh">양질 댓글·리뷰</div><div class="fd">유저 활동</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step accent"><div class="fh">반자동 검수</div><div class="fd">품질 필터</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="fh">언파캐시 적립</div><div class="fd">쿠폰 전환(1캐시=N원)</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="fh">[언니딜] 구매</div><div class="fd">화장품·생필품</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step gold"><div class="fh">매칭 수수료</div><div class="fd">수익 → 보상 재원 재투자</div></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">화면 · Screens</div>
-          <div class="shots cols-3">
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/unnie-1.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">언니딜 메인</span><span class="f">unnie-1.png</span></div></div><div class="shot-cap"><span class="k">01</span>언니딜 메인</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/unnie-2.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">포토 리뷰 가중치 적용</span><span class="f">unnie-2.png</span></div></div><div class="shot-cap"><span class="k">02</span>포토 리뷰 가중치 적용</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/unnie-3.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">언파캐시 리워드</span><span class="f">unnie-3.png</span></div></div><div class="shot-cap"><span class="k">03</span>언파캐시 리워드</div></div>
+          <div class="shots cols-1">
+            <div class="shot shot-wide shot-contain"><div class="shot-frame"><img src="assets/screens/unnie-review.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📝</span><span class="t">뷰티 리뷰 업로드 UX</span><span class="f">unnie-review.png</span></div></div><div class="shot-cap"><span class="k">01</span>뷰티 리뷰 업로드 UX — 화장품 등 제품 리뷰를 쉽게 작성, 반자동 검수 완료 시 언파캐시 적립 (리뷰 1건당 보상)</div></div>
+            <div class="shot shot-wide shot-contain"><div class="shot-frame"><img src="assets/screens/unnie-deal-offerwall.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🎟️</span><span class="t">언니딜 쿠폰 → 뷰티 쇼핑 + 오퍼월</span><span class="f">unnie-deal-offerwall.png</span></div></div><div class="shot-cap"><span class="k">02</span>언니딜 쿠폰 → 뷰티 쇼핑 + 오퍼월 — 리뷰·오퍼월로 모은 언파캐시로 [언니딜] 쿠폰을 사서 화장품 등 뷰티 제품을 실제 구매(쇼핑). 오퍼월은 캐시 적립 미션이자 광고 BM(추가 수익)</div></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">결과</div>
           <div class="impact-row">
             <div class="impact-cell"><div class="num">월 3억</div><div class="lbl">[언니딜] 커머스 매출</div></div>
-            <div class="impact-cell"><div class="num">+15%</div><div class="lbl">CVR (포토 리뷰 가중치 도입 후)</div></div>
+            <div class="impact-cell"><div class="num sm">폐쇄형 순환 BM</div><div class="lbl">활동→언파캐시→쿠폰→구매→매칭 수수료</div></div>
             <div class="impact-cell"><div class="num sm">MAU 150만</div><div class="lbl">뷰티 카테고리 안정 트래픽</div></div>
             <div class="impact-cell"><div class="num">#1</div><div class="lbl">Play Store 뷰티 (24.9월)</div></div>
           </div>
         </div>
-        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>"리뷰의 양"보다 "리뷰의 신뢰도"가 CVR을 움직입니다.</strong> 포토 리뷰 가중치 도입은 단순한 정책 조정이 아니라 <strong>구매 전환 알고리즘 그 자체</strong>였고, 1위 카테고리 진입의 결정적 한 수였습니다.</p></div>
+        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>보상을 '비용'이 아니라 '매출로 되돌아오는 순환'으로 설계하면 유저 활성화와 수익화가 동시에 풀립니다.</strong> 언파캐시는 단순 포인트가 아니라 <strong>매칭 수수료 매출의 마중물</strong>이었고, 자금이 앱 안에서 돌게 만든 폐쇄형 경제 설계가 월 3억의 핵심이었습니다.</p></div>
       </article>
 
       <!-- CASE 05 -->
       <article class="case reveal" id="case-5">
         <header class="case-head">
           <div>
-            <div class="case-num">CASE 05 / B2B2C EXPANSION</div>
-            <h3 class="case-title">전문가 매칭 + 기업 EAP — B2C·B2B 두 축의 매출 파이프라인</h3>
-            <div class="case-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">넛지헬스케어 · 트로스트(마인드키)<span class="pipe">·</span>2021 — 2025<span class="pipe">·</span>Product Owner</div>
+            <div class="case-num">CASE 05 / MISSION AD · B2G</div>
+            <h3 class="case-title">미션형 광고 플랫폼 — 걷기 챌린지로 월 1억 + 공공 캠페인</h3>
+            <div class="case-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">넛지헬스케어 · 팀워크(Teamwalk)<span class="pipe">·</span>2021 — 2025<span class="pipe">·</span>Product Owner</div>
           </div>
-          <div class="case-tags"><span class="case-tag">B2B2C</span><span class="case-tag">PIPELINE</span><span class="case-tag gold">NEW REVENUE</span><span class="case-tag contrib">기여도 100%</span></div>
+          <div class="case-tags"><span class="case-tag">MISSION AD</span><span class="case-tag">LBS</span><span class="case-tag gold">B2G · 공공</span><span class="case-tag contrib">기여도 100%</span></div>
         </header>
-        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">멘탈 케어 서비스는 매출 단가가 높지만 <strong>매칭이 어려운 신뢰 비즈니스</strong>입니다. 개인 구매(B2C)만으로는 한계가 있었고, <strong>기업 단위 수요</strong>는 잡지 못하고 있었습니다.</p></div>
+        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">일반 디스플레이 광고는 노출만 있고 행동을 끌어내지 못합니다. 한편 광고주들은 <strong>"진짜 참여하는 광고"</strong>를 원했고, 공공기관·지자체는 대규모 캠페인 도구를 찾고 있었습니다.</p></div>
         <div class="cs"><div class="cs-label">접근</div>
           <div class="actions">
-            <div class="action"><span class="n">A1</span><span class="t">C2C 전문가 매칭 플랫폼 런칭</span><span class="d">상담 전문가 ↔ 유저 쌍방 연결, 매칭 신뢰도를 높이는 프로필·리뷰 구조</span></div>
-            <div class="action"><span class="n">A2</span><span class="t">B2B EAP 모델 신설</span><span class="d">기업 임직원 지원 프로그램(EAP) — 단가·계약 단위가 큰 매출 파이프라인 추가</span></div>
-            <div class="action"><span class="n">A3</span><span class="t">결제/정산 Admin</span><span class="d">전문가별 정산 주기·세금·환불·세션 기록까지 운영 가능한 Admin 구축</span></div>
+            <div class="action"><span class="n">A1</span><span class="t">다양한 미션형 챌린지 (+위치기반)</span><span class="d">걷기·스탬프·역사 걷기 등 다양한 챌린지를 "미션 완료 시 보상" 광고 상품으로 설계. 스탬프형엔 <strong>위치기반(LBS)·실시간 지도·내비게이션</strong> 연동</span></div>
+            <div class="action"><span class="n">A2</span><span class="t">광고주 셀프서빙 SaaS Admin</span><span class="d">광고주(기업·지자체)가 직접 캠페인을 만들고 집행·효과 측정까지 하는 SaaS형 관리자 — 영업·운영 손 안 거치고 캠페인이 굴러가는 구조</span></div>
+            <div class="action"><span class="n">A3</span><span class="t">공공기관·지자체 B2G 수익 구조</span><span class="d">지자체는 <strong>분기별 소진해야 하는 예산</strong>으로 캠페인 집행 — 기관은 예산 활용·건강 성과, 우리는 안정 수익. 대규모 레퍼런스가 다음 영업으로 순환</span></div>
+          </div>
+        </div>
+        <div class="cs"><div class="cs-label">구조 · Mission Ad & B2B SaaS</div>
+          <div class="flow">
+            <div class="flow-step start"><div class="fh">광고주</div><div class="fd">기업 · 지자체</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step accent"><div class="fh">B2B SaaS Admin</div><div class="fd">자체 캠페인 운영</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="fh">미션 캠페인</div><div class="fd">걷기·스탬프·위치기반</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="fh">유저 참여</div><div class="fd">행동 단위 보상</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step gold"><div class="fh">월 1억</div><div class="fd">광고주·유저 정렬</div></div>
+          </div>
+        </div>
+        <div class="cs"><div class="cs-label">화면 · Screens</div>
+          <div class="shots cols-1">
+            <div class="shot shot-contain"><div class="shot-frame" style="aspect-ratio:2336/1280"><img src="assets/screens/teamwalk.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🚶</span><span class="t">미션 챌린지 · 공공 캠페인 · 위치기반</span><span class="f">teamwalk.png</span></div></div><div class="shot-cap"><span class="k">01</span>미션형 광고 플랫폼 — 걷기·역사 걷기 등 챌린지, 공공기관 캠페인, 위치기반(LBS) 실시간 지도·스탬프 미션</div></div>
+          </div>
+        </div>
+        <div class="cs"><div class="cs-label">결과</div>
+          <div class="impact-row">
+            <div class="impact-cell"><div class="num">월 1억</div><div class="lbl">미션형 광고 BM 매출</div></div>
+            <div class="impact-cell"><div class="num">MAU 100만</div><div class="lbl">걷기·챌린지 활성 유저</div></div>
+            <div class="impact-cell"><div class="num sm">SaaS Admin</div><div class="lbl">B2B 자체 운영 시스템</div></div>
+            <div class="impact-cell"><div class="num sm">공공 캠페인</div><div class="lbl">지자체 대규모 레퍼런스</div></div>
+          </div>
+        </div>
+        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>광고는 노출이 아니라 행동을 사는 일</strong>입니다. "미션 완료" 단위로 광고를 팔자, 광고주 만족과 유저 참여가 같은 방향으로 정렬됐습니다. 특히 지자체의 <strong>"소진해야 하는 예산"</strong>을 미션 캠페인으로 흡수한 B2G 구조는 — 기관엔 예산 활용·성과, 우리에겐 안정 수익 — 양쪽이 이득이었고, 공공 레퍼런스가 다음 영업의 마중물이 됐습니다.</p></div>
+      </article>
+
+      <!-- CASE 06 -->
+      <article class="case reveal" id="case-6">
+        <header class="case-head">
+          <div>
+            <div class="case-num">CASE 06 / MENTAL CARE · B2B2C</div>
+            <h3 class="case-title">멘탈 케어 종합 플랫폼 — 일상 힐링 콘텐츠 · 전문가 매칭 · 기업 EAP</h3>
+            <div class="case-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">넛지헬스케어 · 트로스트(마인드키)<span class="pipe">·</span>2021 — 2025<span class="pipe">·</span>Product Owner</div>
+          </div>
+          <div class="case-tags"><span class="case-tag">MENTAL CARE</span><span class="case-tag">힐링 콘텐츠</span><span class="case-tag gold">B2B2C · EAP</span><span class="case-tag contrib">기여도 100%</span></div>
+        </header>
+        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">멘탈 케어 서비스는 매출 단가가 높지만 <strong>매칭이 어려운 신뢰 비즈니스</strong>이고, 상담은 "필요할 때만" 쓰여 <strong>일상 리텐션이 약했습니다</strong>. 개인 구매(B2C)만으로는 한계가 있었고, <strong>기업 단위 수요(B2B)</strong>도 잡아야 했습니다.</p></div>
+        <div class="cs"><div class="cs-label">접근</div>
+          <div class="actions">
+            <div class="action"><span class="n">A1</span><span class="t">일상 힐링 콘텐츠</span><span class="d">명언·힐링 음원(수면음악)·커뮤니티로 '필요할 때만' 쓰던 상담을 넘어 <strong>매일 들어올 이유</strong> 제공 → 활성·리텐션</span></div>
+            <div class="action"><span class="n">A2</span><span class="t">C2C 전문가 매칭</span><span class="d">상담 전문가 ↔ 유저 쌍방 연결, 프로필·리뷰로 매칭 신뢰도↑</span></div>
+            <div class="action"><span class="n">A3</span><span class="t">B2B EAP + 정산 Admin</span><span class="d">기업 임직원 지원(EAP)으로 단가·계약 큰 매출 파이프라인 + 전문가별 정산·세금·환불·세션 기록 Admin</span></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">구조 · B2C × B2B 이중 파이프라인</div>
@@ -858,10 +899,8 @@ a{color:inherit}
           </div>
         </div>
         <div class="cs"><div class="cs-label">화면 · Screens</div>
-          <div class="shots cols-3">
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/trost-1.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">전문가 매칭 결과</span><span class="f">trost-1.png</span></div></div><div class="shot-cap"><span class="k">01</span>전문가 매칭 결과</div></div>
-            <div class="shot shot-wide"><div class="shot-frame"><img src="assets/screens/trost-2.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🖥</span><span class="t">EAP 기업 대시보드</span><span class="f">trost-2.png</span></div></div><div class="shot-cap"><span class="k">02</span>EAP 기업 대시보드</div></div>
-            <div class="shot shot-wide"><div class="shot-frame"><img src="assets/screens/trost-3.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🖥</span><span class="t">전문가 정산 Admin</span><span class="f">trost-3.png</span></div></div><div class="shot-cap"><span class="k">03</span>전문가 정산 Admin</div></div>
+          <div class="shots cols-1">
+            <div class="shot shot-contain"><div class="shot-frame" style="aspect-ratio:2300/1248"><img src="assets/screens/trost.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🧘</span><span class="t">일상 힐링 콘텐츠 — 명언·힐링 음원·커뮤니티</span><span class="f">trost.png</span></div></div><div class="shot-cap"><span class="k">01</span>일상 힐링 콘텐츠 — 명언·힐링 음원(수면음악)·커뮤니티로 매일 들어올 이유 제공. 전문가 매칭·기업 EAP의 활성·리텐션 기반</div></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">결과</div>
@@ -871,61 +910,15 @@ a{color:inherit}
             <div class="impact-cell"><div class="num sm">A → Z</div><div class="lbl">전문가 매칭·정산 Admin 단독 설계</div></div>
           </div>
         </div>
-        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>B2C 단가 한계는 B2B 채널로 풀린다.</strong> 같은 전문가 풀로 B2C·B2B 두 매출 라인을 굴리려면 <strong>정산 Admin이 시작점</strong>이어야 한다는 걸 배웠습니다. UX보다 백오피스가 먼저였습니다.</p></div>
-      </article>
-
-      <!-- CASE 06 -->
-      <article class="case reveal" id="case-6">
-        <header class="case-head">
-          <div>
-            <div class="case-num">CASE 06 / B2B SaaS</div>
-            <h3 class="case-title">미션형 광고 플랫폼 — 걷기 챌린지로 월 1억 + 공공 캠페인</h3>
-            <div class="case-meta"><img class="logo-chip-img" src="assets/logos/cashwalk.png" alt="">넛지헬스케어 · 팀워크(Teamwalk)<span class="pipe">·</span>2021 — 2025<span class="pipe">·</span>Product Owner</div>
-          </div>
-          <div class="case-tags"><span class="case-tag">B2B SaaS</span><span class="case-tag">CAMPAIGN</span><span class="case-tag gold">PUBLIC</span><span class="case-tag contrib">기여도 100%</span></div>
-        </header>
-        <div class="cs"><div class="cs-label">배경</div><p class="cs-text">일반 디스플레이 광고는 노출만 있고 행동을 끌어내지 못합니다. 한편 광고주들은 <strong>"진짜 참여하는 광고"</strong>를 원했고, 공공기관·지자체는 대규모 캠페인 도구를 찾고 있었습니다.</p></div>
-        <div class="cs"><div class="cs-label">접근</div>
-          <div class="actions">
-            <div class="action"><span class="n">A1</span><span class="t">미션형 광고 플랫폼</span><span class="d">걷기 챌린지 · 스탬프 챌린지를 "미션 완료 시 보상"인 광고 상품으로 설계</span></div>
-            <div class="action"><span class="n">A2</span><span class="t">B2B SaaS Admin</span><span class="d">광고주(기업·지자체)가 직접 캠페인을 만들고 효과를 보는 SaaS형 관리자 시스템</span></div>
-            <div class="action"><span class="n">A3</span><span class="t">기업형 멤버십 구독</span><span class="d">1회성 캠페인 → 임직원 참여형 멤버십 구독 BM</span></div>
-            <div class="action"><span class="n">A4</span><span class="t">공공기관 · 지자체 캠페인</span><span class="d">레퍼런스가 곧 다음 영업 — 대규모 캠페인 직접 운영하며 사례 축적</span></div>
-          </div>
-        </div>
-        <div class="cs"><div class="cs-label">구조 · Mission Ad & B2B SaaS</div>
-          <div class="flow">
-            <div class="flow-step start"><div class="fh">광고주</div><div class="fd">기업 · 지자체</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step accent"><div class="fh">B2B SaaS Admin</div><div class="fd">자체 캠페인 운영</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="fh">미션 캠페인</div><div class="fd">걷기 · 스탬프</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="fh">유저 참여</div><div class="fd">행동 단위 보상</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step gold"><div class="fh">월 1억</div><div class="fd">광고주·유저 정렬</div></div>
-          </div>
-        </div>
-        <div class="cs"><div class="cs-label">화면 · Screens</div>
-          <div class="shots cols-3">
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/teamwalk-1.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">걷기 챌린지 진행</span><span class="f">teamwalk-1.png</span></div></div><div class="shot-cap"><span class="k">01</span>걷기 챌린지 진행</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/teamwalk-2.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">스탬프 미션</span><span class="f">teamwalk-2.png</span></div></div><div class="shot-cap"><span class="k">02</span>스탬프 미션</div></div>
-            <div class="shot shot-wide"><div class="shot-frame"><img src="assets/screens/teamwalk-3.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🖥</span><span class="t">기업용 SaaS 대시보드</span><span class="f">teamwalk-3.png</span></div></div><div class="shot-cap"><span class="k">03</span>기업용 SaaS 대시보드</div></div>
-          </div>
-        </div>
-        <div class="cs"><div class="cs-label">결과</div>
-          <div class="impact-row">
-            <div class="impact-cell"><div class="num">월 1억</div><div class="lbl">미션형 광고 BM 매출</div></div>
-            <div class="impact-cell"><div class="num">MAU 100만</div><div class="lbl">걷기·챌린지 활성 유저</div></div>
-            <div class="impact-cell"><div class="num sm">SaaS Admin</div><div class="lbl">B2B 자체 운영 시스템</div></div>
-            <div class="impact-cell"><div class="num sm">공공 캠페인</div><div class="lbl">지자체 대규모 레퍼런스</div></div>
-          </div>
-        </div>
-        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>광고는 노출이 아니라 행동을 사는 일</strong>입니다. "미션 완료" 단위로 광고를 팔자, 광고주 만족과 유저 참여가 같은 방향으로 정렬됐습니다. 공공 캠페인 레퍼런스가 다음 B2B 매출의 마중물이 되는 구조도 검증할 수 있었습니다.</p></div>
+        <div class="lesson"><div class="cs-label">학습</div><p class="cs-text"><strong>B2C 단가 한계는 B2B로, 낮은 일상 리텐션은 콘텐츠로 푼다.</strong> 명언·힐링 음원 같은 일상 힐링 콘텐츠가 매일 들어올 이유를 만들어 매칭·EAP의 활성 기반이 됐고, 같은 전문가 풀로 B2C·B2B를 굴리는 출발점은 <strong>정산 Admin</strong>이었습니다.</p></div>
       </article>
 
       <!-- CASE 07 -->
       <article class="case reveal" id="case-7">
         <header class="case-head">
           <div>
-            <div class="case-num">CASE 07 / AI · UX</div>
-            <h3 class="case-title">AI 모션 인식 운동 콘텐츠 — 구글플레이 최우수상</h3>
+            <div class="case-num">CASE 07 / AI · GAMIFICATION</div>
+            <h3 class="case-title">AI 모션 인식으로 운동을 게임처럼 — 구글플레이 최우수상</h3>
             <div class="case-meta"><img class="logo-chip-img" src="assets/logos/ipixel.png" alt="">아이픽셀 · 하우핏 (Howfit)<span class="pipe">·</span>2020.12 — 2021.10<span class="pipe">·</span>Product Manager</div>
           </div>
           <div class="case-tags"><span class="case-tag">AI</span><span class="case-tag">UX</span><span class="case-tag gold">AWARD</span><span class="case-tag contrib">기여도 100%</span></div>
@@ -933,7 +926,7 @@ a{color:inherit}
         <div class="cs"><div class="cs-label">배경</div><p class="cs-text">홈트레이닝은 콘텐츠는 많아도 <strong>"내가 잘하고 있는지"</strong> 피드백받기 어려웠습니다. AI 모션 인식 기술이 있어도, <strong>일반 유저가 거부감 없이 따라갈 수 있는 UX</strong>로 풀어야 했습니다.</p></div>
         <div class="cs"><div class="cs-label">접근</div>
           <div class="actions">
-            <div class="action"><span class="n">A1</span><span class="t">AI 스켈레톤 기반 운동 UIUX</span><span class="d">"얼마나 정확한가"를 시각적·즉각적 피드백으로 — 카운트·각도·자세 가이드 통합</span></div>
+            <div class="action"><span class="n">A1</span><span class="t">AI 스켈레톤·ML 모션 인식</span><span class="d">카메라로 유저 동작을 AI 스켈레톤 추적·<strong>머신러닝</strong>으로 실시간 인식 → 자세 점수·피드백으로 운동을 게임처럼(<strong>게이미피케이션</strong>). 카운트·각도·자세 가이드 통합</span></div>
             <div class="action"><span class="n">A2</span><span class="t">라이브 클래스 유료 BM</span><span class="d">녹화 콘텐츠를 넘어 라이브 클래스로 객단가·충성도를 모두 잡는 유료 채널 신설</span></div>
             <div class="action"><span class="n">A3</span><span class="t">기술 → 사용성 번역</span><span class="d">모션 인식 정확도·지연·각도 한계를 UX·문구로 보정 — 기술 실패가 유저 실패가 되지 않도록</span></div>
           </div>
@@ -943,15 +936,13 @@ a{color:inherit}
             <div class="flow-step start"><div class="fh">유저 동작</div><div class="fd">카메라 입력</div></div><div class="flow-arrow">→</div>
             <div class="flow-step dark"><div class="fh">AI 스켈레톤</div><div class="fd">관절 인식</div></div><div class="flow-arrow">→</div>
             <div class="flow-step accent"><div class="fh">정확도 측정</div><div class="fd">각도 · 자세 분석</div></div><div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="fh">UX 피드백</div><div class="fd">카운트 · 가이드 · 문구</div></div><div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="fh">게이미피케이션</div><div class="fd">점수 · 피드백 · 가이드</div></div><div class="flow-arrow">→</div>
             <div class="flow-step gold"><div class="fh">사용성 ↑</div><div class="fd">최우수상 · 라이브 BM</div></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">화면 · Screens</div>
-          <div class="shots cols-3">
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/howfit-1.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">AI 모션 가이드</span><span class="f">howfit-1.png</span></div></div><div class="shot-cap"><span class="k">01</span>AI 모션 가이드</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/howfit-2.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">자세 정확도 피드백</span><span class="f">howfit-2.png</span></div></div><div class="shot-cap"><span class="k">02</span>자세 정확도 피드백</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/howfit-3.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">라이브 클래스 입장</span><span class="f">howfit-3.png</span></div></div><div class="shot-cap"><span class="k">03</span>라이브 클래스 입장</div></div>
+          <div class="shots cols-1">
+            <div class="shot shot-contain" style="max-width:680px;margin-inline:auto"><div class="shot-frame" style="aspect-ratio:1400/1734"><img src="assets/screens/howfit.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🏃</span><span class="t">AI 모션 인식 × 게이미피케이션</span><span class="f">howfit.png</span></div></div><div class="shot-cap"><span class="k">01</span>AI 모션 인식 × 게이미피케이션 — 카메라가 유저 동작을 AI 스켈레톤·ML로 인식해 실시간 점수(Perfect!)로 운동을 게임처럼. 분야·부위·난이도별 클래스 + 운동 통계</div></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">결과</div>
@@ -989,13 +980,6 @@ a{color:inherit}
             <div class="flow-step"><div class="fh">방문 케어 PT</div><div class="fd">코로나 시점 신설</div></div><div class="flow-arrow">→</div>
             <div class="flow-step"><div class="fh">운영 Admin</div><div class="fd">매칭 · 정산 · 교육</div></div><div class="flow-arrow">→</div>
             <div class="flow-step gold"><div class="fh">가입률 +200%</div><div class="fd">구독 채널 안착</div></div>
-          </div>
-        </div>
-        <div class="cs"><div class="cs-label">화면 · Screens</div>
-          <div class="shots cols-3">
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/dano-1.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">베이직 케어 가입</span><span class="f">dano-1.png</span></div></div><div class="shot-cap"><span class="k">01</span>베이직 케어 가입 흐름</div></div>
-            <div class="shot shot-phone"><div class="shot-frame"><img src="assets/screens/dano-2.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">📱</span><span class="t">방문 케어 PT</span><span class="f">dano-2.png</span></div></div><div class="shot-cap"><span class="k">02</span>방문 케어 PT 채널</div></div>
-            <div class="shot shot-wide"><div class="shot-frame"><img src="assets/screens/dano-3.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="shot-ph" style="display:none"><span class="ic">🖥</span><span class="t">코치 운영 Admin</span><span class="f">dano-3.png</span></div></div><div class="shot-cap"><span class="k">03</span>코치 운영 Admin</div></div>
           </div>
         </div>
         <div class="cs"><div class="cs-label">결과</div>
@@ -1056,12 +1040,12 @@ a{color:inherit}
       <div class="sblock reveal">
         <div class="sb-h">DOMAIN EXPERTISE</div>
         <div class="domain-list">
-          <div class="dm"><div class="dm-top"><span class="dm-h">광고 / 수익화</span><span class="dm-note">SSP · DSP · Offerwall · CRM</span></div><div class="dm-bar"><span style="width:96%"></span></div></div>
-          <div class="dm"><div class="dm-top"><span class="dm-h">커뮤니티</span><span class="dm-note">SEO · UGC · 리뷰 가중치</span></div><div class="dm-bar"><span style="width:90%"></span></div></div>
-          <div class="dm"><div class="dm-top"><span class="dm-h">라이브 커머스</span><span class="dm-note">도네이션 BM · 라이브 광고</span></div><div class="dm-bar"><span style="width:88%"></span></div></div>
-          <div class="dm"><div class="dm-top"><span class="dm-h">커머스</span><span class="dm-note">언니딜 · CVR 최적화</span></div><div class="dm-bar"><span style="width:85%"></span></div></div>
-          <div class="dm"><div class="dm-top"><span class="dm-h">건강 / 운동</span><span class="dm-note">AI 모션 인식 · 챌린지 BM</span></div><div class="dm-bar"><span style="width:82%"></span></div></div>
-          <div class="dm"><div class="dm-top"><span class="dm-h">B2B / SaaS</span><span class="dm-note">EAP · 기업 멤버십 · SaaS Admin</span></div><div class="dm-bar"><span style="width:78%"></span></div></div>
+          <div class="dm"><div class="dm-top"><span class="dm-h">광고 / 수익화</span><span class="dm-note">SSP · DSP · Offerwall · CRM</span></div><div class="dm-bar"><span style="width:98%"></span></div></div>
+          <div class="dm"><div class="dm-top"><span class="dm-h">커뮤니티</span><span class="dm-note">SEO · UGC · 리뷰 가중치</span></div><div class="dm-bar"><span style="width:95%"></span></div></div>
+          <div class="dm"><div class="dm-top"><span class="dm-h">라이브 커머스</span><span class="dm-note">도네이션 BM · 라이브 광고</span></div><div class="dm-bar"><span style="width:93%"></span></div></div>
+          <div class="dm"><div class="dm-top"><span class="dm-h">커머스</span><span class="dm-note">언니딜 · 언파캐시 순환 BM</span></div><div class="dm-bar"><span style="width:91%"></span></div></div>
+          <div class="dm"><div class="dm-top"><span class="dm-h">건강 / 운동</span><span class="dm-note">AI 모션 인식 · 챌린지 BM</span></div><div class="dm-bar"><span style="width:89%"></span></div></div>
+          <div class="dm"><div class="dm-top"><span class="dm-h">B2B / B2G</span><span class="dm-note">EAP · B2G 캠페인 · 셀프서빙 Admin</span></div><div class="dm-bar"><span style="width:86%"></span></div></div>
         </div>
       </div>
 
@@ -1108,8 +1092,8 @@ a{color:inherit}
     <div class="philo-grid">
       <div class="philo reveal"><div class="pn">P · 01</div><h3>매출은 백오피스에서 갈린다</h3><p>도네이션·EAP·커머스 모두, <strong>화면이 아니라 정산 Admin이 먼저</strong> 설계되어야 BM이 굴러갑니다. 운영 비용·환불 룰·세금을 처음부터 보지 않으면 매출이 나도 남는 게 없습니다.</p></div>
       <div class="philo reveal"><div class="pn">P · 02</div><h3>광고는 흐름 위에 얹어야 한다</h3><p>라이브의 도네이션, 커뮤니티의 SSP, 만보기의 미션 광고 — 모두 <strong>유저가 이미 하던 행동</strong>에 얹었을 때 효율이 나왔습니다. 새 화면을 새로 만들 때마다 BM은 죽습니다.</p></div>
-      <div class="philo reveal"><div class="pn">P · 03</div><h3>정책 = 알고리즘이다</h3><p>포토 리뷰 가중치 한 줄이 CVR 15%를 움직입니다. PO에게 <strong>정책 설계는 곧 알고리즘 설계</strong>이고, 한 줄의 룰이 매출을 가릅니다.</p></div>
-      <div class="philo reveal"><div class="pn">P · 04</div><h3>B2C 한계는 B2B로 푼다</h3><p>트로스트 EAP, 팀워크 SaaS, 캐시워크 SaaS화 — 같은 자산을 <strong>다른 고객(기업·지자체)</strong>에게 다시 팔 수 있을 때 매출 천장이 없어집니다. 트래픽은 자원이지, 결과가 아닙니다.</p></div>
+      <div class="philo reveal"><div class="pn">P · 03</div><h3>정책 = 알고리즘이다</h3><p>언파캐시 환율(1캐시=N원)·전환 임계치 한 줄이 BM 전체를 좌우합니다. PO에게 <strong>정책 설계는 곧 알고리즘 설계</strong>이고, 한 줄의 룰이 매출을 가릅니다.</p></div>
+      <div class="philo reveal"><div class="pn">P · 04</div><h3>B2C 한계는 B2B로 푼다</h3><p>트로스트 EAP, 팀워크 B2G 캠페인, 캐시워크 SaaS화 — 같은 자산을 <strong>다른 고객(기업·지자체)</strong>에게 다시 팔 수 있을 때 매출 천장이 없어집니다. 트래픽은 자원이지, 결과가 아닙니다.</p></div>
     </div>
     <div class="quote reveal">
       <span class="mk">"</span>
